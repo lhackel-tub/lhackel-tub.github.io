@@ -1,1 +1,16 @@
-Hello World
+<html>
+<body>
+    <div>This side is under construction. You will be redirected in </div>
+    <div id="counter">5</div>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("https://rsim.berlin");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
